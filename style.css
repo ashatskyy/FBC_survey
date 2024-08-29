@@ -36,10 +36,26 @@ h1, .p-up{
 }
 .e{
 	margin: auto ;
-	width: 300px;
+	width: 340px;
 	/* background-color: rgba(0,0,0,0.5); */
 	background-color: rgba(0,0,250,0.5);
 	color: white;
 	padding: 10px;
 	padding-bottom: 10px;
 }
+
+/* form */
+
+/* form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+} */
