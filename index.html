@@ -14,14 +14,178 @@
       href="https://fonts.googleapis.com/css2?family=Manrope&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <div class="d"></div>
-    <h1>onlineBookStore Survey Form</h1>
-		<p class=" p-up p-mod">Thank you for taking the time to help us improve the service</p>
-    <div class="e">
-		  <p>Would you recommend freeCodeCamp to a friend?</p>
+  <body class="body">
+    <div class="background"></div>
+    <div class="container">
+      <div class="header">
+        <h1 id="title">onlineBookStore Survey Form</h1>
+        <p class="p" id="description">
+          Thank you for taking the time to help us improve the service
+        </p>
+      </div>
+      <form 
+			  class="form" 
+				method="post" 
+				action="https://onlineBookStore.test"
+				id="form"
+			  >
+        <fieldset>
+          <label 
+					  for="name"
+						id="name-label"
+            >Name<input
+              class="input"
+              id="name"
+              type="text"
+              name="name"
+							placeholder=" Enter your name"
+              required
+            />
+          </label>
+					<label 
+					  for="email"
+						id="email-label"
+					  >Email<input 
+					  	class="input"
+				     	id="email" 
+							type="text" 
+							name="email" 
+							placeholder=" Enter your email"
+							required
+				    /></label>
+			  	<label 
+					  for="age"
+						id="number-label"
+					  >Age (optional)<input 
+				  		class="input"
+							id="number" 
+						  id="age" 
+							type="number" 
+							name="age"
+							min="5" 
+							max="220"
+							placeholder=" Enter your age"
+			    /></label>
+				</fieldset>
+				<fieldset>
+          <label for=""
+            >Which option best describes your current interest?
+            <select class="input" id="dropdown">
+              <option value="">Select your interest</option>
+              <option value="1">Fiction</option>
+              <option value="2">Non-Fiction</option>
+            </select>
+          </label>
+				</fieldset>
+				<fieldset>
+					<legend>Would you recommend onlineBookStore.test to a friend?</legend>
+          <label
+					  class="radio" 
+					  for="personal-account"
+            ><input
+              id="personal-account"
+              type="radio"
+              name="recommend"
+              checked
+            />
+            Definitely</label
+          >
+				</fieldset>
+			  <fieldset>
+          <label class="radio" for="business-account"
+            ><input 
+						  id="business-account" 
+							type="radio" 
+							name="recommend" 
+							/>
+            Maybe</label
+          >
+        </fieldset>
+			  <fieldset>
+          <label class="radio" for="business-account"
+            ><input 
+						  id="business-account" 
+							type="radio" 
+							name="recommend" 
+							/>
+            Not sure</label
+          >
+        </fieldset>
+			  <fieldset>
+					<legend>What is your favorite feature of onlineBookStore.test?</legend>
+				  <label for=""
+				    >
+				    <select class="input">
+					    <option value="">Select one</option>
+					    <option value="1">no glitches</option>
+					    <option value="2">simplicity</option>
+				    </select>
+			    </label>
+		    </fieldset>
+		    <fieldset>
+			    <legend>What would you like to see improved? (Check all that apply)</legend>
+			    <label
+		     	><input
+				    name="prefer"
+			     	value="city-meetups"
+			    	type="checkbox"
+				    class="input2"
+			      /> Design</label
+	        >
+		    </fieldset>
+      	<fieldset>
+		      <label
+		   	  ><input
+			  	  name="prefer"
+				    value="wiki"
+				    type="checkbox"
+				    class="input2"
+			      /> Usability</label
+		      >
+	      </fieldset>
+      	<fieldset>
+		      <label
+		   	  ><input
+			  	  name="prefer"
+				    value="wiki"
+				    type="checkbox"
+				    class="input2"
+			      /> Feedback</label
+		      >
+	      </fieldset>
+      	<fieldset>
+		      <label
+		   	  ><input
+			  	  name="prefer"
+				    value="wiki"
+				    type="checkbox"
+				    class="input2"
+			      /> Assortment of goods</label
+		      >
+	      </fieldset>
+      	<fieldset>
+		      <label
+		   	  ><input
+			  	  name="prefer"
+				    value="wiki"
+				    type="checkbox"
+				    class="input2"
+			      /> Delivery time</label
+		      >
+	      </fieldset>
+			  <fieldset>
+	        <label for="bio">Any comments or suggestions?
+		      <textarea id="bio" name="bio" rows="10" cols="30" placeholder="Enter your comment here"></textarea>
+	        </label>
+				</fieldset>
+		  	<fieldset>
+	        <button type="submit" id="submit" class="submit-button">
+		        Submit
+	        </button>
+			  </fieldset>
+      </form>
     </div>
   </body>
 </html>
