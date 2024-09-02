@@ -35,27 +35,23 @@ body {
 	margin-bottom: 40px;
 }
 h1{
-	/* margin: 0; */
 	margin-bottom: 0;
 }
-.p {
+.description {
   font-style: italic;
   letter-spacing: 1.2px;
-	/* margin: 0; */
 	margin-top: 7px;
-	/* margin-bottom: 20px; */
 }
 .form {
   box-sizing: border-box;
   width: 100%;
-  background-color: rgba(0, 150, 250, 0.8);
+  background-color: rgba(61, 57, 53, 0.7);
   padding: 35px;
 	padding-top: 50px;
 }
 fieldset {
   border: 0;
   text-align: left;
-	/* box-sizing: border-box; */
 	padding: 0;
 	padding-bottom: 10px;
 }
@@ -64,11 +60,9 @@ fieldset {
   width: 100%;
   min-height: 3em;
   border-radius: 5px;
+
+  margin-top: 5px;
   margin-bottom: 20px;
-}
-.radio{
-  display: block;
-	padding-bottom: 7px;
 }
 legend{
 	width: 100%;
@@ -78,15 +72,17 @@ legend{
 textarea{
 	width: 100%;
 	box-sizing: border-box;
+	border-radius: 5px;
 }
 button{
 	margin-top: 23px;
 	width: 100%;
 	height: 2.5em;
-	background-color: rgba(0,150,0.5);
+	background-color: rgba(0, 0, 220, 1);
 	color: white;
 	font-size: 22px;
 	font-family: 'Times New Roman', Times, serif;
+	cursor: pointer;
 }
 .near{
 	margin: 0;
@@ -96,4 +92,14 @@ button{
 }
 .inter{
 	padding-bottom: 30px;
+}
+.block{
+	display: block;
+	padding-bottom: 7px;
+}
+.select_input{
+	margin-bottom: 10px;
+}
+.button{
+	margin-top: 12px;
 }

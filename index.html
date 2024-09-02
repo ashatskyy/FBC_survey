@@ -4,16 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>onlineBookStore.test</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="body">
@@ -21,7 +11,7 @@
     <div class="container">
       <div class="header">
         <h1 id="title">onlineBookStore Survey Form</h1>
-        <p class="p" id="description">
+        <p class="description" id="description">
           Thank you for taking the time to help us improve the service
         </p>
       </div>
@@ -29,7 +19,7 @@
         class="form"
         method="post"
         action="https://onlineBookStore.test"
-        id="form"
+        id="survey-form"
       >
         <fieldset>
           <label for="name" id="name-label"
@@ -46,7 +36,7 @@
             >Email<input
               class="input"
               id="email"
-              type="text"
+              type="email"
               name="email"
               placeholder=" Enter your email"
               required
@@ -64,7 +54,7 @@
           /></label>
         </fieldset>
         <fieldset>
-          <label for=""
+          <label for="dropdown"
             >Which option best describes your current interest?
             <select class="input" id="dropdown">
               <option value="">Select your interest</option>
@@ -75,43 +65,41 @@
         </fieldset>
         <fieldset>
           <legend>Would you recommend onlineBookStore.test to a friend?</legend>
-          <!-- <p class="near">
-            Would you recommend onlineBookStore.test to a friend?
-          </p> -->
-
-            <label class="radio" for="personal-account"
+            <label class="block" for="Definitely"
               ><input
-                id="personal-account"
+                id="Definitely"
                 type="radio"
-                name="recommend"
+                name="recommendation"
+                value='Definitely'
                 checked
               />
               Definitely</label
             >
      
-      
-          <label class="radio" for="business-account"
-            ><input id="business-account" type="radio" name="recommend" />
+          <label class="block" for="Maybe"
+            ><input 
+						  id="Maybe" 
+							type="radio" 
+							name="recommendation"
+              value='Maybe'
+             />
             Maybe</label
           >
       
-          <label class="radio" for="business-account"
+          <label class="block" for="Not-sure"
             ><input
               class="far"
-              id="business-account"
+              id="Not-sure"
               type="radio"
-              name="recommend"
+							name="recommendation"
+              value='Not sure'
             />
             Not sure</label
           >
         </fieldset>
         <fieldset>
-          <!-- <legend>What is your favorite feature of onlineBookStore.test?</legend> -->
-          <p class="near">
-            What is your favorite feature of onlineBookStore.test?
-          </p>
-          <label class="radio" for="">
-            <select class="input">
+          <label class="block" for="ref">What is your favorite feature of onlineBookStore.test?
+            <select class="input select_input" id="ref" name="ref">
               <option value="">Select one</option>
               <option value="1">no glitches</option>
               <option value="2">simplicity</option>
@@ -122,46 +110,52 @@
           <legend>
             What would you like to see improved? (Check all that apply)
           </legend>
-          <label
+          <label class="block"
             ><input
               name="prefer"
-              value="city-meetups"
+              value="Design"
               type="checkbox"
-              class="input2"
             />
             Design</label
           >
-        </fieldset>
-        <fieldset>
-          <label
-            ><input name="prefer" value="wiki" type="checkbox" class="input2" />
+          <label class="block"
+            ><input 
+						  name="prefer" 
+							value="Usability" 
+							type="checkbox" 
+					  />
             Usability</label
           >
-        </fieldset>
-        <fieldset>
-          <label
-            ><input name="prefer" value="wiki" type="checkbox" class="input2" />
+          <label  class="block"
+            ><input 
+						  name="prefer" 
+							value="Feedback" 
+							type="checkbox" 
+							 />
             Feedback</label
           >
-        </fieldset>
-        <fieldset>
-          <label
-            ><input name="prefer" value="wiki" type="checkbox" class="input2" />
+          <label class="block"
+            ><input
+						  name="prefer" 
+							value=" Assortment of goods" 
+							type="checkbox" />
             Assortment of goods</label
           >
-        </fieldset>
-        <fieldset class="inter">
-          <label
-            ><input class='interval' name="prefer" value="wiki" type="checkbox" class="input2" />
+          <label class="block"
+            ><input 
+						class="far"
+							name="prefer" 
+							value="Delivery time" 
+							type="checkbox"  />
             Delivery time</label
           >
         </fieldset>
         <fieldset>
 					<legend>Any comments or suggestions?</legend>
-          <label for="">
+          <label for="comment">
             <textarea
-              id=""
-              name=""
+              id="comment"
+              name="comment"
               rows="10"
               cols="30"
               placeholder="Enter your comment here"
@@ -169,7 +163,11 @@
           </label>
         </fieldset>
         <fieldset>
-          <button type="submit" id="submit" class="submit-button">
+          <button 
+					  class="button"
+					  type="submit" 
+						id="submit"
+						>
             Submit
           </button>
         </fieldset>
